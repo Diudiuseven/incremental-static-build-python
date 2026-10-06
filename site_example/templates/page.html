@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>{{title}} — {{site_name}}</title></head>
+<body>
+@include('_header.html')
+<article>
+  {{{body_html}}}
+</article>
+<section class="posts">
+  @foreach(post in posts)
+  <a class="post" href="/posts/{{post.slug}}">{{post.title}}</a>
+  @end
+</section>
+@include('_footer.html')
+</body>
+</html>

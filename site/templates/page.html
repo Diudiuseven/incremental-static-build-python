@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh">
+{{include:partials/head.html}}
+<body>
+  <nav><a href="/">首页</a> · <a href="/guides/usage/">用法</a></nav>
+  <main>
+    {{content}}
+  </main>
+  <footer>由增量静态生成构建 · 站点名：{{data:data/site.json:name}}</footer>
+</body>
+</html>
